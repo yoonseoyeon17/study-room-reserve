@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자습실 예약 시스템 프로토타입</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌟 자습실 예약 시스템 (V1.0) 🌟</h1>
+        <p>아래 좌석 배치도를 확인 후, 예약 정보를 입력해주세요.</p>
+
+        <!-- Step 1에서 만든 좌석 배치도 이미지를 보여줍니다. -->
+        <img src="seat_layout.jpg" alt="자습실 좌석 배치도" class="seat-map">
+
+        <div class="reservation-form">
+            <h3>예약 정보 입력</h3>
+            <input type="number" id="seat-number" placeholder="좌석 번호 (1-40)">
+            <input type="text" id="student-id" placeholder="학번 (예: 1234)">
+            <input type="text" id="student-name" placeholder="이름 (예: 윤서연)">
+            <button onclick="makeReservation()">선착순 예약하기</button>
+        </div>
+
+        <!-- 예약 결과가 여기에 표시됩니다. -->
+        <div id="result-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
