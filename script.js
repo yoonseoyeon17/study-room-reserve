@@ -43,9 +43,7 @@ function makeReservation() {
             ✅ <strong>${name}(${studentId})</strong> 님, 
             <strong>${seatNum}번</strong> 좌석 예약이 완료되었습니다.
         </p>
-        <p style="font-size: 0.8em; color: #555;">
-            (10분 내에 입실 QR코드를 인증하지 않으면 자동 취소됩니다.)
-        </p>
+        
     `;
 
     // 8. 입력창을 깨끗하게 비워줍니다.
